@@ -16,6 +16,7 @@ import { FooterComponent } from './component/footer/footer.component';
 import { SalesComponent } from './component/sales/sales.component';
 import { ProductCreateFormComponent } from './component/products/product-create-form/product-create-form.component';
 import { ClientCreateFormComponent } from './component/clients/client-create-form/client-create-form.component';
+import { SaleCreateFormComponent } from './component/sales/sale-create-form/sale-create-form.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ClientCreateFormComponent } from './component/clients/client-create-for
     SalesComponent,
     ProductCreateFormComponent,
     ClientCreateFormComponent,
+    SaleCreateFormComponent,
   ],
   imports: [
     BrowserModule,
