@@ -6,6 +6,16 @@ import { AppComponent } from './app.component';
 import { ProductsComponent } from './component/products/products.component';
 import { ClientsComponent } from './component/clients/clients.component';
 import { HomeComponent } from './pages/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDialogModule } from '@angular/material/dialog'; 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './component/header/header.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { SalesComponent } from './component/sales/sales.component';
+import { ProductCreateFormComponent } from './component/products/product-create-form/product-create-form.component';
+import { ClientCreateFormComponent } from './component/clients/client-create-form/client-create-form.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +23,21 @@ import { HomeComponent } from './pages/home/home.component';
     ProductsComponent,
     ClientsComponent,
     HomeComponent,
+    HeaderComponent,
+    FooterComponent,
+    SalesComponent,
+    ProductCreateFormComponent,
+    ClientCreateFormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
